@@ -9,15 +9,15 @@ const HomePage = () => {
   {/* Image Section */}
   <div className="w-full">
     <img
-      src="/images/esponsov.png"
+      src="/images/mob.png"
       alt="Hero"
-      className="w-full h-auto object-cover"
+      className="w-full h-auto object-cover "
     />
   </div>
 
   {/* Text Section */}
   <div className="px-6 py-10 text-center text-purple-900">
-    <h1 className="text-3xl font-bold leading-tight mb-4">
+    <h1 className="text-3xl font-bold leading-tight mb-2">
       Build a foundation for <br />
       a life time of <br />
       <span className="text-yellow-500">learning</span>
@@ -33,7 +33,7 @@ const HomePage = () => {
 <div
   className="hidden md:flex relative w-full min-h-screen bg-cover bg-center items-center justify-center"
   style={{
-    backgroundImage: `url("/images/bg.png.png")`,
+    backgroundImage: `url("/images/01.png")`,
   }}
 >
   <div className="absolute inset-0 z-0"></div>
@@ -72,18 +72,18 @@ const HomePage = () => {
             <h2 className="text-3xl font-extrabold mb-4">About Us</h2>
             <h3 className="text-xl font-semibold mb-2">Spandan Preschool</h3>
             <p className="mb-4">
-              Kidzee Preschool is a leading chain of preschools located in India and Nepal backed by Zee Learn Ltd...
+              Spandan Preschool is a leading chain of preschools located in India and Nepal backed by Zee Learn Ltd...
             </p>
 
             <h3 className="text-xl font-semibold mb-2">Spandan Advantage</h3>
             <p className="mb-2">
-              Kidzee is a <strong>leader</strong> and a trendsetter in <strong>Early Childhood Care and Education (ECCE)</strong>...
+              Spandan is a <strong>leader</strong> and a trendsetter in <strong>Early Childhood Care and Education (ECCE)</strong>...
             </p>
             <p className="mb-2">
               Our Business Partners don't just take the name, they also take our <strong>pedagogy- PÊNTEMiND</strong>...
             </p>
             <p className="mb-2">
-              Starting a preschool requires strategic planning... <strong>Kidzee Professional research</strong>...
+              Starting a preschool requires strategic planning... <strong>Spandan Professional research</strong>...
             </p>
             <p className="mb-2">
               <strong>Secret to Success is Service and Support.</strong> We provide pre-opening and operational support...
@@ -109,7 +109,7 @@ const HomePage = () => {
           {/* Left Content */}  
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl font-bold text-yellow-400 mb-4">DayCare</h2>
-            <h3 className="text-lg font-semibold mb-2">Kidzee Daycare – A home away from home for your child!</h3>
+            <h3 className="text-lg font-semibold mb-2">Spandan Daycare – A home away from home for your child!</h3>
 
             <div className="border border-white p-4 mb-4">
               Duration - Choose Suitable Hours Schedule.<br />

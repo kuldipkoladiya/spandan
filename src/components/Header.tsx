@@ -14,8 +14,16 @@ export default function Header() {
     <header className="text-white bg-transparent absolute top-0 left-0 w-full z-20">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center relative z-50">
-          <Link href="/" className="text-2xl font-bold hover:text-amber-200 text-purple-800">
-            Spandan
+          {/* Logo */}
+          <Link href="/" className="flex items-center space-x-2 hover:opacity-80">
+            <img
+              src="/images/spandan logo.png"
+              alt="Spandan Logo"
+              width={50}
+              height={50}
+              className="object-contain h-10 w-auto"
+            />
+            <span className="text-xl font-bold text-purple-800"></span>
           </Link>
 
           {/* Mobile menu button */}
@@ -41,7 +49,7 @@ export default function Header() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex space-x-6 items-center">
             <Link href="/" className="hover:text-amber-200 transition-colors">
               Home
             </Link>
