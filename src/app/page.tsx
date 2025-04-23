@@ -9,7 +9,7 @@ const HomePage = () => {
   {/* Image Section */}
   <div className="w-full">
     <img
-      src="/images/mob.png"
+      src="/images/mobsvg.svg"
       alt="Hero"
       className="w-full h-auto object-cover "
     />
@@ -33,7 +33,7 @@ const HomePage = () => {
 <div
   className="hidden md:flex relative w-full min-h-screen bg-cover bg-center items-center justify-center"
   style={{
-    backgroundImage: `url("/images/01.png")`,
+    backgroundImage: `url("/images/1st.svg")`,
   }}
 >
   <div className="absolute inset-0 z-0"></div>

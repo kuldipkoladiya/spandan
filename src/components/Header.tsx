@@ -17,10 +17,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 hover:opacity-80">
             <img
-              src="/images/spandan logo.png"
+              src="/images/spandan.svg"
               alt="Spandan Logo"
-              width={50}
-              height={50}
+              width={80}
+              height={80}
               className="object-contain h-10 w-auto"
             />
             <span className="text-xl font-bold text-purple-800"></span>
@@ -29,7 +29,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-[#732d92] focus:outline-none relative z-50"
+            className="md:hidden text-yellow focus:outline-none relative z-50"
           >
             <svg
               className="w-6 h-6"
