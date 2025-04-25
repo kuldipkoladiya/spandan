@@ -1,10 +1,23 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const AdmissionPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: true, // Only animate once
+    });
+  }, []);
+
   return (
     <div className="w-full bg-[#ebe1ff] pt-24">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section
+        className="relative py-20 overflow-hidden"
+        data-aos="fade-up"
+      >
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{
@@ -15,8 +28,8 @@ const AdmissionPage = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-20 text-white text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Admission Process</h1>
-          <p className="text-lg max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6" data-aos="fade-up">Admission Process</h1>
+          <p className="text-lg max-w-3xl mx-auto" data-aos="fade-up">
             Join our vibrant learning community and give your child the best start in life
           </p>
         </div>
@@ -25,19 +38,19 @@ const AdmissionPage = () => {
       {/* Admission Steps */}
       <section className="py-16 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-purple-900 mb-12 text-center">How to Apply</h2>
+          <h2 className="text-3xl font-bold text-purple-900 mb-12 text-center" data-aos="fade-up">How to Apply</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center" data-aos="fade-up">
               <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-900 font-bold text-xl">1</div>
               <h3 className="text-xl font-semibold text-purple-900 mb-3">Submit Enquiry</h3>
               <p className="text-gray-700">Fill out our online admission enquiry form with your details</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center" data-aos="fade-up">
               <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-900 font-bold text-xl">2</div>
               <h3 className="text-xl font-semibold text-purple-900 mb-3">School Visit</h3>
               <p className="text-gray-700">Schedule a visit to our campus and meet our staff</p>
             </div>
-            <div className="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div className="bg-white p-8 rounded-lg shadow-lg text-center" data-aos="fade-up">
               <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4 text-purple-900 font-bold text-xl">3</div>
               <h3 className="text-xl font-semibold text-purple-900 mb-3">Confirmation</h3>
               <p className="text-gray-700">Complete the admission process and secure your child's spot</p>
@@ -48,7 +61,7 @@ const AdmissionPage = () => {
 
       {/* Admission Form */}
       <section className="py-16 px-6 lg:px-20 bg-white">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">Admission Enquiry Form</h2>
           <form className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
@@ -127,9 +140,9 @@ const AdmissionPage = () => {
       {/* Fee Structure */}
       <section className="py-16 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">Fee Structure</h2>
+          <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center" data-aos="fade-up">Fee Structure</h2>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <table className="w-full">
+            <table className="w-full" data-aos="fade-up">
               <thead className="bg-purple-900 text-white">
                 <tr>
                   <th className="px-6 py-4 text-left">Program</th>

@@ -1,10 +1,20 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="w-full bg-[#ebe1ff] pt-24">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden" data-aos="fade-up">
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
           style={{
@@ -23,7 +33,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-16 px-6 lg:px-20">
+      <section className="py-16 px-6 lg:px-20" data-aos="fade-up">
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-lg shadow-lg text-center">
             <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -65,7 +75,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-16 px-6 lg:px-20 bg-white">
+      <section className="py-16 px-6 lg:px-20 bg-white" data-aos="fade-up">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">Send us a Message</h2>
           <form className="space-y-6">
@@ -75,7 +85,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
                   required
                 />
               </div>
@@ -84,7 +94,7 @@ const ContactPage = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
                   required
                 />
               </div>
@@ -95,7 +105,7 @@ const ContactPage = () => {
               <input
                 type="text"
                 id="subject"
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
                 required
               />
             </div>
@@ -105,7 +115,7 @@ const ContactPage = () => {
               <textarea
                 id="message"
                 rows={6}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all"
                 required
               ></textarea>
             </div>
@@ -113,7 +123,7 @@ const ContactPage = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-yellow-400 text-purple-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transition"
+                className="bg-yellow-400 text-purple-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transition transform hover:scale-105"
               >
                 Send Message
               </button>
@@ -123,42 +133,16 @@ const ContactPage = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">Visit Us</h2>
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="aspect-w-16 aspect-h-9">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.803436198694!2d72.8270503!3d19.0392201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDAyJzIxLjIiTiA3MsKwNDknMzcuNCJF!5e0!3m2!1sen!2sin!4v1625147153000!5m2!1sen!2sin"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Working Hours */}
-      <section className="py-16 px-6 lg:px-20 bg-purple-900 text-white">
+      <section className="py-16 px-6 lg:px-20" data-aos="fade-up">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-8">Working Hours</h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">School Hours</h3>
-              <p>Monday - Friday: 8:00 AM - 3:00 PM</p>
-              <p>Saturday: 8:00 AM - 12:00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Office Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-              <p>Saturday: 9:00 AM - 1:00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
+          <h2 className="text-3xl font-bold text-purple-900 mb-8">Find Us Here</h2>
+          <div className="aspect-w-16 aspect-h-9">
+            <iframe
+              className="w-full h-full rounded-lg shadow-lg"
+              src="https://www.google.com/maps/embed?pb=..."
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>

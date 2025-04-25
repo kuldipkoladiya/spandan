@@ -1,65 +1,75 @@
-import React from 'react';
+"use client";
+import React, { useEffect } from 'react';
+import AOS from 'aos';  // Make sure you import AOS if it's not done globally
+import 'aos/dist/aos.css';  // AOS styles
 
 const HomePage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="w-full bg-[#ebe1ff]">
       {/* Hero Section */}
-   {/* Mobile Hero Section */}
-   <div className="w-full md:hidden bg-[#ebe1ff]">
-  {/* Image Section */}
-  <div className="w-full">
-    <img
-      src="/images/mobsvg.svg"
-      alt="Hero"
-      className="w-full h-auto object-cover "
-    />
-  </div>
+      {/* Mobile Hero Section */}
+      <div className="w-full md:hidden bg-[#ebe1ff]" data-aos="fade-up">
+        {/* Image Section */}
+        <div className="w-full">
+          <img
+            src="/images/mobsvg.svg"
+            alt="Hero"
+            className="w-full h-auto object-cover "
+          />
+        </div>
 
-  {/* Text Section */}
-  <div className="px-6 py-10 text-center text-purple-900">
-    <h1 className="text-3xl font-bold leading-tight mb-2">
-      Build a foundation for <br />
-      a life time of <br />
-      <span className="text-yellow-500">learning</span>
-    </h1>
-    <p className="text-lg mb-6">Admission Open</p>
-    <button className="bg-yellow-400 text-purple-800 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-yellow-300 transition">
-      Enroll Now →
-    </button>
-  </div>
-</div>
+        {/* Text Section */}
+        <div className="px-6 py-10 text-center text-purple-900" data-aos="fade-up">
+          <h1 className="text-3xl font-bold leading-tight mb-2">
+            Build a foundation for <br />
+            a life time of <br />
+            <span className="text-yellow-500">learning</span>
+          </h1>
+          <p className="text-lg mb-6">Admission Open</p>
+          <button className="bg-yellow-400 text-purple-800 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-yellow-300 transition">
+            Enroll Now →
+          </button>
+        </div>
+      </div>
 
-{/* Desktop/Tablet Hero Section */}
-<div
-  className="hidden md:flex relative w-full min-h-screen bg-cover bg-center items-center justify-center"
-  style={{
-    backgroundImage: `url("/images/1st.svg")`,
-  }}
->
-  <div className="absolute inset-0 z-0"></div>
+      {/* Desktop/Tablet Hero Section */}
+      <div
+        className="hidden md:flex relative w-full min-h-screen bg-cover bg-center items-center justify-center"
+        style={{
+          backgroundImage: `url("/images/1st.svg")`,
+        }}
+        data-aos="fade-up"
+      >
+        <div className="absolute inset-0 z-0"></div>
 
-  <div className="absolute z-10 max-w-7xl w-full px-6 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-6">
-    {/* Left Content */}
-    <div className="text-white max-w-xl">
-      <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-        Build a foundation for <br />
-        a life time of <br />
-        <span className="text-yellow-400">learning</span>
-      </h1>
-      <p className="text-lg mb-6">Admission Open</p>
-      <button className="bg-yellow-400 text-purple-800 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-yellow-300 transition">
-        Enroll Now →
-      </button>
-    </div>
-  </div>
-</div>
-
+        <div className="absolute z-10 max-w-7xl w-full px-6 lg:px-20 flex flex-col md:flex-row items-center justify-between gap-6">
+          {/* Left Content */}
+          <div className="text-white max-w-xl">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+              Build a foundation for <br />
+              a life time of <br />
+              <span className="text-yellow-400">learning</span>
+            </h1>
+            <p className="text-lg mb-6">Admission Open</p>
+            <button className="bg-yellow-400 text-purple-800 font-bold py-2 px-6 rounded-full shadow-lg hover:bg-yellow-300 transition">
+              Enroll Now →
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/* About Section */}
-      <section className="bg-[#ebe1ff] py-16 px-6 lg:px-20 relative z-10">
+      <section
+        className="bg-[#ebe1ff] py-16 px-6 lg:px-20 relative z-10"
+        data-aos="fade-up"
+      >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Left: Image */}
-          <div className="relative w-full md:w-1/2">
+          <div className="relative w-full md:w-1/2" data-aos="fade-right">
             <img
               src="/images/about.png"
               alt="Kid playing"
@@ -68,13 +78,12 @@ const HomePage = () => {
           </div>
 
           {/* Right: Text */}
-          <div className="md:w-1/2 text-purple-900">
+          <div className="md:w-1/2 text-purple-900" data-aos="fade-left">
             <h2 className="text-3xl font-extrabold mb-4">About Us</h2>
             <h3 className="text-xl font-semibold mb-2">Spandan Preschool</h3>
             <p className="mb-4">
               Spandan Preschool is a leading chain of preschools located in India and Nepal backed by Zee Learn Ltd...
             </p>
-
             <h3 className="text-xl font-semibold mb-2">Spandan Advantage</h3>
             <p className="mb-2">
               Spandan is a <strong>leader</strong> and a trendsetter in <strong>Early Childhood Care and Education (ECCE)</strong>...
@@ -93,7 +102,7 @@ const HomePage = () => {
       </section>
 
       {/* DayCare Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative py-20 overflow-hidden" data-aos="fade-up">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center z-0"
@@ -106,8 +115,8 @@ const HomePage = () => {
 
         {/* Foreground Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-20 flex flex-col md:flex-row items-center gap-12 text-white">
-          {/* Left Content */}  
-          <div className="w-full md:w-1/2">
+          {/* Left Content */}
+          <div className="w-full md:w-1/2" data-aos="fade-right">
             <h2 className="text-3xl font-bold text-yellow-400 mb-4">DayCare</h2>
             <h3 className="text-lg font-semibold mb-2">Spandan Daycare – A home away from home for your child!</h3>
 
@@ -126,26 +135,27 @@ const HomePage = () => {
           </div>
 
           {/* Right Image */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2" data-aos="fade-left">
             <img
-              src="/images/3.png"
+              src="/images/daycare.svg"
               alt="Daycare"
               className="w-full max-w-md mx-auto "
             />
           </div>
         </div>
       </section>
+
       {/* Our Pedagogy Section */}
-<section className="w-full py-16 px-6 lg:px-20 bg-[#ebe1ff] flex flex-col items-center">
-  <h2 className="text-3xl font-extrabold text-purple-900 mb-6">Our Pedagogy</h2>
-  <div className="w-full max-w-5xl">
-    <img
-      src="/images/pantamind_new_img.svg"
-      alt="Our Pedagogy - PENTEMIND"
-      className="w-full h-auto rounded-lg object-contain"
-    />
-  </div>
-</section>
+      <section className="w-full py-16 px-6 lg:px-20 bg-[#ebe1ff] flex flex-col items-center" data-aos="fade-up">
+        <h2 className="text-3xl font-extrabold text-purple-900 mb-6">Our Pedagogy</h2>
+        <div className="w-full max-w-5xl">
+          <img
+            src="/images/pantamind_new_img.svg"
+            alt="Our Pedagogy - PENTEMIND"
+            className="w-full h-auto rounded-lg object-contain"
+          />
+        </div>
+      </section>
     </div>
   );
 };
