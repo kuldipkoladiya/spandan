@@ -42,8 +42,7 @@ const ContactPage = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-purple-900 mb-2">Phone</h3>
-            <p className="text-gray-700">+91 98765 43210</p>
-            <p className="text-gray-700">+91 12345 67890</p>
+            <p className="text-gray-700"> +91 9374131212</p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -53,8 +52,7 @@ const ContactPage = () => {
               </svg>
             </div>
             <h3 className="text-xl font-semibold text-purple-900 mb-2">Email</h3>
-            <p className="text-gray-700">info@spandanpreschool.com</p>
-            <p className="text-gray-700">admissions@spandanpreschool.com</p>
+            <p className="text-gray-700">spandankids123@gmail.com</p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -66,9 +64,9 @@ const ContactPage = () => {
             </div>
             <h3 className="text-xl font-semibold text-purple-900 mb-2">Address</h3>
             <p className="text-gray-700">
-              123 Education Street,<br />
-              Knowledge Park,<br />
-              City - 400001
+          A,56  Ashwin Society 3,<br /> 
+          Varachha, Surat,<br />
+          Gujarat 395006,
             </p>
           </div>
         </div>
@@ -138,11 +136,12 @@ const ContactPage = () => {
           <h2 className="text-3xl font-bold text-purple-900 mb-8">Find Us Here</h2>
           <div className="aspect-w-16 aspect-h-9">
             <iframe
-              className="w-full h-full rounded-lg shadow-lg"
-              src="https://www.google.com/maps/embed?pb=..."
+              className="w-full h-[400px] rounded-lg shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.367185068778!2d72.85031311084064!3d21.217283380398207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fc80d44abdd%3A0xb3ad69bf5d120c69!2sSpandan%20Kids%20Nursery!5e0!3m2!1sen!2sin!4v1745647145265!5m2!1sen!2sin"
               frameBorder="0"
               allowFullScreen
             ></iframe>
+
           </div>
         </div>
       </section>
