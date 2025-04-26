@@ -81,22 +81,19 @@ const HomePage = () => {
           <div className="md:w-1/2 text-purple-900" data-aos="fade-left">
             <h2 className="text-3xl font-extrabold mb-4">About Us</h2>
             <h3 className="text-xl font-semibold mb-2">Spandan Preschool</h3>
-            <p className="mb-4">
-              Spandan Preschool is a leading chain of preschools located in India and Nepal backed by Zee Learn Ltd...
+            <p className="mb-4">  
+            At Spandan Kids Nursery, we believe that every child is unique, curious, and full of potential. Located in the heart of our community, Spandan Kids Nursery offers a warm, joyful, and stimulating environment for early learners — from Playgroup to Nursery, Junior KG, and Senior KG.
+Our carefully designed programs help young minds explore, imagine, and grow with confidence, setting a strong foundation for lifelong learning.
             </p>
-            <h3 className="text-xl font-semibold mb-2">Spandan Advantage</h3>
+            <h3 className="text-xl font-semibold mb-2">Why Choose Spandan Kids Nursery?</h3>
             <p className="mb-2">
-              Spandan is a <strong>leader</strong> and a trendsetter in <strong>Early Childhood Care and Education (ECCE)</strong>...
-            </p>
-            <p className="mb-2">
-              Our Business Partners don't just take the name, they also take our <strong>pedagogy- PÊNTEMiND</strong>...
+              <strong>Spandan Kids Nursery</strong> stands for excellence in Early Childhood Care and Education 
             </p>
             <p className="mb-2">
-              Starting a preschool requires strategic planning... <strong>Spandan Professional research</strong>...
+            Our approach combines international best practices with a deep understanding of child development, ensuring each child receives personal attention, love, and the right stimulation to blossom in their own unique way.
             </p>
-            <p className="mb-2">
-              <strong>Secret to Success is Service and Support.</strong> We provide pre-opening and operational support...
-            </p>
+          
+          
           </div>
         </div>
       </section>
